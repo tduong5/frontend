@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple React Markdown Previewer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- https://github.com/markedjs/marked?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.1.0/marked.min.js" integrity="sha512-DZIC9m2IbFlio5GE2oKD6/veW6NXML5Cbo9FHnba7Q9R4OCPelWw9R5QpupcPPLSv0euhuRr+5JV5pWl3X3nSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      document.getElementById('root').innerHTML =
+        marked.parse('# Marked in the browser\n\nRendered by **marked**.');
+    </script>
+  </body>
+  <!-- This is used to run FreeCodeCamp tests -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

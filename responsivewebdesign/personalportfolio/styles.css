@@ -1,0 +1,146 @@
+:root {
+  --heading-bars-color: gray;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+html {
+  min-width: 500px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#navbar {
+  position: absolute;
+  width: 22vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(21 21 21);;
+}
+
+#navbar div {
+  margin: 10px;
+  font-size: 0.8rem;
+}
+
+.nav-link {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link li {
+  list-style: none;
+}
+
+.nav-link a, .socials a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+.nav-link a:hover {
+  color: #6598db;
+  cursor: pointer;
+}
+
+.introduction {
+  color: white;
+}
+
+.introduction h1 {
+  text-align: left;
+}
+
+.main-section {
+  position: absolute;
+  left: 24.5rem;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  min-width: 300px;
+  padding: 10px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.socials svg{
+  width: 6.5%;
+  padding-right: 10px;
+  fill: currentColor;
+}
+
+.numbered-headings {
+  display: flex;
+  align-items: center;
+}
+
+.numbered-headings::before {
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 150px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--heading-bars-color) ;
+  content: "";
+}
+
+.numbered-headings::after {
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 150px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--heading-bars-color);
+  content: "";
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.project-box {
+  box-sizing: border-box;
+  display: block;
+  background-color: rgb(148, 148, 149);
+	text-align: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 2.5px;
+  text-decoration: none;
+}
+
+
+.project-title {
+  padding-top: 10px;
+  color: white;
+}
+
+.project-description {
+  color: black;
+}

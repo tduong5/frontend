@@ -1,0 +1,63 @@
+* {
+  font-family: 'Lora', serif;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  max-height: 30em;
+  display: block;
+  margin: auto;
+}
+
+#img-div {
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+body {
+  background-color: #eeebe9;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+li {
+  margin-top: 15px;
+}
+
+#quotes {
+  font-style: italic;
+  padding: 10px 0px;
+}
+
+#profile-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 15em;
+  display: block;
+  margin: auto;
+}
+
+.heading {
+  background-color: #f5f5f5;
+}
+
+.heading p {
+  padding: 10px;
+}
+
+#title {
+  font-size: 2.5em;
+}

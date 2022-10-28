@@ -1,0 +1,202 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 20px;
+}
+
+#header ul li {
+  list-style-type: none;
+  color: white;
+}
+
+#header-img {
+  width: 2vh;
+  height: 10vh;
+  margin-left: 10px;
+}
+
+#header {
+  width: 100%;
+	height: 50px;
+	background-color: black;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.h1-subtitle {
+  text-align: center;
+  margin: 10px;
+  letter-spacing: 0.45px;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.ipad-background {
+  background-color: black;
+}
+
+.ipad-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-bar {
+  min-width: 400px;
+}
+
+#nav-bar > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: #2d55f6;
+}
+
+#Features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  flex-direction: row;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+#Features h2 {
+  margin-top: 10px;
+}
+
+.features-paragraph {
+  text-align: center;
+  margin-top: 2px;
+}
+
+#Why_iPad h2 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#Why_iPad iframe {
+  display: block;
+  margin: auto;
+  width: 65vw;
+  height: 50vh;
+}
+
+.ipad-fanned, .ipad-colors {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.ipad-fanned img {
+  width: 15vw;
+}
+
+.ipad-colors img {
+  width: 10vh;
+}
+
+#ipad-hr {
+  width: 50%;
+  height: 1px;
+  margin: 10px auto;
+  background-color: #c7c7c7;
+  border: none;
+}
+
+#Pricing h4, #Pricing p {
+  text-align: center;
+}
+
+#Pricing h4 {
+  font-weight: 300;
+  margin: 5px;
+}
+
+#Pricing p {
+  font-size: 0.85rem;
+}
+
+footer {
+  margin: 10px;
+  font-size: 0.75rem;
+}
+
+.footer-link {
+  color: #9c9c9c;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.ft-div {
+  /* to get margin-left to the right side */
+  display: flex;
+}
+
+.ft-div-link {
+  margin-left: auto;
+}
+
+.fm-input {
+  display: flex;
+  justify-content: center;
+}
+
+#email {
+  padding: 8px;
+  width: 20rem;
+  margin: 10px;
+}
+
+#submit {
+  border-radius: 100px;
+  color: white;
+  background-color: #2d55f6;
+  border: 0;
+  padding: 8px 6px 8px 6px;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #3b5ff5;
+  cursor: pointer;
+}

@@ -1,0 +1,127 @@
+:root {
+  --button-bg-graycolor: #838282;
+  --equals-bg-lightbluecolor: #3d62de;
+  --clear-bg-redcolor: #df4646;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  margin-top: 20vh;
+  background-color: black;
+  color: white;  
+  padding: 5px;
+  border-radius: 3px; 
+
+  #arithmetic {
+    text-align: right;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    min-height: 20px;
+    line-height: 20px;
+    color: orange;
+  }
+
+  #display {
+    text-align: right;
+    font-size: 2em;
+  }
+
+  .container-buttons {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.1px;
+    grid-template-areas: 
+      "clear clear divide multiply"  
+      "seven eight nine subtract"   
+      "four five six add"   
+      "one two three equals"   
+      "zero zero decimal equals";
+    width: 22vw;
+    height: 45vh;
+
+    button {
+      border: 1px solid black;
+      color: white;
+      background-color: var(--button-bg-graycolor);
+      font-size: 1.25rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: black;
+    }
+
+    #clear {
+      grid-area: clear;
+      background-color: var(--clear-bg-redcolor) !important;
+    }
+
+    #divide {
+      grid-area: divide;
+    }
+
+    #multiply {
+      grid-area: multiply;
+    }
+    #seven {
+      grid-area: seven;
+    }
+    #eight {
+      grid-area: eight;
+    }
+    #nine {
+      grid-area: nine;
+    }
+    #subtract {
+      grid-area: subtract;
+    }
+
+    #four {
+      grid-area: four;
+    }
+    #five {
+      grid-area: five;
+    }
+    #six {
+      grid-area: six;
+    }
+    #add {
+      grid-area: add;
+    }
+    #one {
+      grid-area: one;
+    }
+    #two {
+      grid-area: two;
+    }
+    #three {
+      grid-area: three;
+    }
+  
+    #equals {
+      grid-area: equals;
+      background-color: var(--equals-bg-lightbluecolor) !important;
+    }
+
+    #zero {
+      grid-area: zero;
+    }
+    #decimal {
+      grid-area: decimal;
+    }
+  }
+}
+

@@ -1,0 +1,57 @@
+.App {
+  background-color: #c9d9f2;
+  height: 100%;
+  width: 100vw;
+  padding: 10px
+}
+
+#editor {
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+
+#preview {
+  background-color: #dde3ed;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  width: 50vw;
+  margin: 10px auto;
+  border-radius: 3px;
+  padding: 0 10px;
+
+  h1 {
+    color: #395e82;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  // Markdown wraps a code block in both <pre> and <code> tags.
+  pre {
+    background-color: white;
+  }
+  code {
+
+  }
+
+  // inline code
+  > p > code {
+    background-color: white;
+    padding: 0 4px;
+  }
+
+  blockquote {
+    border-left: 3px solid #b3b4b5;
+    color: #4d4e4f;
+    padding-left: 5px;
+    margin-left: 15px;
+  }
+
+  img {
+    display: block;
+    max-width: 70%;
+    margin: 1rem auto;
+  }
+}
+
